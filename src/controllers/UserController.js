@@ -3,7 +3,7 @@ module.exports = {
     async index(req, res) {
         const users = await User.findAll();
 
-        return res.json(users);
+        return res.send({user: users,id: req.userId});
     },
     
     
