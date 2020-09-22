@@ -1,13 +1,13 @@
 const express = require('express');
-const UserController = require('./controllers/UserController');
-const AddressController = require('./controllers/AddressController');
-const TechController = require('./controllers/TechController');
-const ReportController = require('./controllers/ReportController');
+const UserController = require('./app/controllers/UserController');
+const AddressController = require('./app/controllers/AddressController');
+const TechController = require('./app/controllers/TechController');
+const ReportController = require('./app/controllers/ReportController');
 const users = express.Router();
 const routes = express.Router();
 const app = express();
 
-const authMiddlewares = require('./middlewares/auth');
+const authMiddlewares = require('./app/middlewares/auth');
 //users.use(authMiddlewares);
 
 
